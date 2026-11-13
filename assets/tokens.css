@@ -1,0 +1,95 @@
+/* ============================================================
+   Design tokens read off boardui.com (www.boardui.com), 13 Nov 2026.
+   Values were resolved in the browser from its live computed styles,
+   not guessed: neutral/accent ramps, radii, shadows, type and metrics.
+
+   Accent note: BoardUI's own accent ramp is blue. This build runs the
+   BuscarApp product green instead, as a full 50–950 ramp in the same
+   shape, so 600/700 land on the product's --brand (#16a34a) and
+   --brand-strong (#15803d) and 900 on --brand-deep (#14532d).
+   BoardUI's blue is kept below, commented out, to switch back.
+   ============================================================ */
+
+:root{
+  /* ---- neutral ramp ---- */
+  --neutral-50:#fafafa;
+  --neutral-100:#f7f7f7;
+  --neutral-200:#ebebeb;
+  --neutral-300:#d4d4d4;
+  --neutral-400:#a1a1a1;
+  --neutral-500:#737373;
+  --neutral-600:#525252;
+  --neutral-700:#404040;
+  --neutral-800:#262626;
+  --neutral-900:#171717;
+  --neutral-950:#0a0a0a;
+  --white:#ffffff;
+
+  /* ---- accent ramp: BuscarApp green ---- */
+  --accent-50:#f0fdf4;
+  --accent-100:#dcfce7;
+  --accent-200:#bbf7d0;
+  --accent-300:#86efac;
+  --accent-400:#4ade80;
+  --accent-500:#22c55e;   /* product --brand-bright */
+  --accent-600:#16a34a;   /* product --brand        */
+  --accent-700:#15803d;   /* product --brand-strong */
+  --accent-800:#166534;
+  --accent-900:#14532d;   /* product --brand-deep   */
+  --accent-950:#052e16;
+
+  /* BoardUI's blue, if you want it back:
+  --accent-50:#eff6ff;  --accent-100:#dbeafe; --accent-200:#bedbff;
+  --accent-300:#8ec5ff; --accent-400:#3392ff; --accent-500:#2b7fff;
+  --accent-600:#155dfc; --accent-700:#1447e6; --accent-800:#193cb8;
+  --accent-900:#1c398e; --accent-950:#162556; */
+
+  /* ---- semantic ---- */
+  --text-primary:var(--neutral-950);
+  --text-secondary:var(--neutral-500);
+  --text-tertiary:var(--neutral-400);
+  --text-white:var(--white);
+  --bg-primary:var(--white);
+  --bg-secondary:var(--neutral-100);
+  --bg-tertiary:var(--neutral-200);
+  --border-default:var(--neutral-200);
+  --border-hover:var(--neutral-300);
+  --separator:var(--neutral-200);
+  --focus-ring:var(--accent-500);
+
+  /* ---- state ---- */
+  --state-success-text:#3c6300;
+  --state-success-base:#d8f999;
+  --state-warning-text:#894b00;
+  --state-warning-base:#fff085;
+  --state-error-text:#9f0712;
+  --state-error-base:#ffe2e2;
+
+  /* ---- radii (BoardUI's scale; 2lg = its button radius) ---- */
+  --radius-sm:4px;
+  --radius-md:6px;
+  --radius-lg:8px;
+  --radius-2lg:10px;
+  --radius-xl:12px;
+  --radius-2xl:16px;
+  --radius-3xl:24px;
+  --radius-full:9999px;
+
+  /* ---- shadows ---- */
+  --shadow-xs:0 1px 2px 0 rgba(0,0,0,.05);
+  --shadow-sm:0 1px 2px 0 rgba(0,0,0,.06),0 1px 3px 0 rgba(0,0,0,.10);
+  --shadow-md:0 2px 4px -1px rgba(0,0,0,.06),0 4px 6px -1px rgba(0,0,0,.10);
+  --shadow-lg:0 4px 6px -2px rgba(0,0,0,.05),0 10px 15px -3px rgba(0,0,0,.10);
+  --shadow-card:0 1px 1px 0 rgba(0,0,0,.04),0 4px 4px 0 rgba(0,0,0,.02);
+  --shadow-lift:0 -2px 13px 0 rgba(0,0,0,.043);
+
+  /* ---- type ---- */
+  --font-sans:"Inter","Inter Fallback",ui-sans-serif,system-ui,sans-serif;
+  --font-mono:"JetBrains Mono",ui-monospace,SFMono-Regular,Menlo,Consolas,monospace;
+  --tracking-tight:-0.02em;
+
+  /* ---- metrics ---- */
+  --container:1276px;
+  --header-h:72px;
+  --control-h:36px;
+}
