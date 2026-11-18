@@ -44,17 +44,27 @@
   --accent-600:#155dfc; --accent-700:#1447e6; --accent-800:#193cb8;
   --accent-900:#1c398e; --accent-950:#162556; */
 
+  /* ---- cream page layer ----
+     The page is cream and the cards stay white, so depth comes from the
+     paper rather than from shadow. Greys are warmed and darkened to keep
+     body copy above 4.5:1 on cream, which plain #737373 does not manage. */
+  --cream-50:#f8f6f0;    /* the page */
+  --cream-100:#f2efe7;   /* alternating bands, inset panels */
+  --cream-200:#e6e1d5;   /* pressed / filled chips */
+  --line-warm:#eae6db;   /* hairlines, warm so they sit on cream */
+
   /* ---- semantic ---- */
   --text-primary:var(--neutral-950);
-  --text-secondary:var(--neutral-500);
-  --text-tertiary:var(--neutral-400);
+  --text-secondary:#6b6b6b;   /* 4.93:1 on cream, 5.33:1 on white */
+  --text-tertiary:#8a8a8a;    /* 3:1 on every layer; large text only */
   --text-white:var(--white);
+  --bg-page:var(--cream-50);
   --bg-primary:var(--white);
-  --bg-secondary:var(--neutral-100);
-  --bg-tertiary:var(--neutral-200);
-  --border-default:var(--neutral-200);
-  --border-hover:var(--neutral-300);
-  --separator:var(--neutral-200);
+  --bg-secondary:var(--cream-100);
+  --bg-tertiary:var(--cream-200);
+  --border-default:var(--line-warm);
+  --border-hover:#dcd6c8;
+  --separator:var(--line-warm);
   --focus-ring:var(--accent-500);
 
   /* ---- state ---- */

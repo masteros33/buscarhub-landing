@@ -6,7 +6,7 @@
 html{-webkit-text-size-adjust:100%;scroll-behavior:smooth;scroll-padding-top:90px}
 body{
   margin:0;
-  background:var(--bg-primary);
+  background:var(--bg-page);
   color:var(--text-primary);
   font-family:var(--font-sans);
   font-size:15px;
@@ -43,7 +43,7 @@ button{font:inherit}
 
 /* ============ header ============ */
 .hdr{
-  position:sticky;top:0;z-index:60;background:var(--bg-primary);
+  position:sticky;top:0;z-index:60;background:var(--bg-page);
   border-bottom:1px solid transparent;transition:border-color .2s ease,box-shadow .2s ease;
 }
 .hdr.stuck{border-bottom-color:var(--border-default)}
@@ -238,7 +238,7 @@ button{font:inherit}
 .cta .t-lead{max-width:520px}
 
 /* ============ footer ============ */
-.ft{border-top:1px solid var(--border-default);padding:48px 0 32px;background:var(--bg-primary)}
+.ft{border-top:1px solid var(--border-default);padding:48px 0 32px;background:var(--bg-page)}
 .ft__grid{display:grid;grid-template-columns:2fr 1fr 1fr 1fr;gap:32px;margin-bottom:40px}
 .ft__grid p{margin-top:12px;font-size:13px;line-height:19px;color:var(--text-secondary);max-width:30ch}
 .ft h4{font-size:13px;font-weight:500;margin-bottom:12px}
@@ -265,7 +265,7 @@ button{font:inherit}
   .nav{
     position:absolute;top:100%;left:-16px;right:-16px;
     flex-direction:column;align-items:stretch;gap:2px;margin:0;padding:12px 16px 18px;
-    background:var(--bg-primary);border-bottom:1px solid var(--border-default);
+    background:var(--bg-page);border-bottom:1px solid var(--border-default);
     box-shadow:var(--shadow-md);
     /* closed: slid up AND taken out of sight, or it shows above the banner */
     transform:translateY(-12px);opacity:0;visibility:hidden;pointer-events:none;
