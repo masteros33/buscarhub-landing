@@ -54,12 +54,6 @@
 <symbol id="i-db" viewBox="0 0 24 24"><ellipse cx="12" cy="6" rx="7.5" ry="3" fill="none" stroke="currentColor" stroke-width="1.7"/><path d="M4.5 6v12c0 1.7 3.4 3 7.5 3s7.5-1.3 7.5-3V6M4.5 12c0 1.7 3.4 3 7.5 3s7.5-1.3 7.5-3" fill="none" stroke="currentColor" stroke-width="1.7"/></symbol>
 </defs></svg>
 
-<!-- ============ announcement ============ -->
-<div class="banner">
-  <span>BuscarERP 1.0.9 for Android is out — Bluetooth receipts and camera barcode scanning.</span>
-  <a href="https://console.buscarapp.net/download/BuscarERP.apk">Download<svg class="arw" width="13" height="13" aria-hidden="true"><use href="#i-arw"/></svg></a>
-</div>
-
 <!-- ============ header ============ -->
 <header class="hdr" id="hdr">
   <div class="wrap hdr__in">
@@ -79,7 +73,6 @@
       <a href="#offline">Offline</a>
       <a href="#app">Android app</a>
       <a href="#specs">Specs</a>
-      <a href="#plans">Plans</a>
     </nav>
     <div class="hdr__end">
       <a class="btn btn--hide" href="https://demo.buscarapp.net" target="_blank" rel="noopener">Demo</a>
@@ -95,7 +88,7 @@
 <section class="hero">
   <div class="prism" aria-hidden="true"><i></i><i></i><i></i><i></i></div>
   <div class="wrap hero__in">
-    <a class="pill rv" href="#packages"><span class="pill__dot"></span>Eight packages, one system<svg class="arw" width="12" height="12" aria-hidden="true"><use href="#i-arw"/></svg></a>
+    <a class="pill rv" href="#packages"><span class="pill__dot"></span>Everything the shop runs on<svg class="arw" width="12" height="12" aria-hidden="true"><use href="#i-arw"/></svg></a>
     <h1 class="t-hero rv rv-d1">Business software for <span class="t-dim">Ghanaian SMEs</span></h1>
     <p class="t-lead rv rv-d2">
       BuscarApp runs the till, stock, customers and credit, purchasing, quotes and invoices,
@@ -106,17 +99,7 @@
       <a class="btn btn--dark btn--lg" href="https://demo.buscarapp.net" target="_blank" rel="noopener">
         Open the demo <svg class="arw" width="15" height="15" aria-hidden="true"><use href="#i-arw"/></svg>
       </a>
-      <a class="btn btn--lg" href="https://console.buscarapp.net/download/BuscarERP.apk">
-        <svg width="15" height="15" aria-hidden="true"><use href="#i-phone"/></svg> Download for Android
-      </a>
-    </div>
-    <div class="hero__chips rv rv-d4">
-      <span class="chip"><svg width="14" height="14" aria-hidden="true"><use href="#i-code"/></svg> Django <em>5.0</em></span>
-      <span class="chip"><svg width="14" height="14" aria-hidden="true"><use href="#i-code"/></svg> React <em>19</em></span>
-      <span class="chip"><svg width="14" height="14" aria-hidden="true"><use href="#i-db"/></svg> PostgreSQL <em>17</em></span>
-      <span class="chip"><svg width="14" height="14" aria-hidden="true"><use href="#i-phone"/></svg> Capacitor <em>8</em></span>
-      <span class="chip"><svg width="14" height="14" aria-hidden="true"><use href="#i-msg"/></svg> Arkesel <em>· Hubtel</em></span>
-      <span class="chip"><svg width="14" height="14" aria-hidden="true"><use href="#i-invoice"/></svg> Paystack</span>
+      <a class="btn btn--lg" href="#talk">Talk to us</a>
     </div>
   </div>
 </section>
@@ -182,7 +165,7 @@
         </div>
         <div class="card__foot">
           <div class="row"><h3>Stock as a ledger</h3><svg width="15" height="15" aria-hidden="true"><use href="#i-arw"/></svg></div>
-          <p>No stored stock figure. On hand is the sum of every movement, with the balance after each one and who caused it.</p>
+          <p>There is no stock figure anyone can type over. What is on hand is every delivery, sale, transfer and count added up, showing who caused each one.</p>
         </div>
       </article>
 
@@ -217,12 +200,11 @@
 <section class="sec sec--alt" id="how">
   <div class="wrap">
     <div class="sec__head">
-      <p class="mono rv"><b>POST</b> <i>/api/sales/</i> &rarr; 5 records, 1 transaction</p>
       <h2 class="t-sec rv rv-d1">One sale writes every record it touches</h2>
       <p class="t-lead rv rv-d2">
         A cashier taps three items and takes the cash. That writes the stock movements, posts a
         balanced journal, updates what the customer owes and lands in the owner's overview —
-        inside one database transaction, with nothing to reconcile afterwards.
+        all at once, with nothing to tidy up afterwards.
       </p>
     </div>
 
@@ -326,10 +308,10 @@
       </svg>
 
       <div class="flow__legend">
-        <div><span class="n">1</span><b>Nothing is typed twice</b>The browser sends what to buy, never what it costs. Prices, stock checks and coupons are worked out on the server.</div>
-        <div><span class="n">2</span><b>Two tills can't oversell</b>Every product row in the basket is locked while the order is written, so the last unit sells once.</div>
-        <div><span class="n">3</span><b>History stays history</b>Line items are snapshotted. Editing a catalogue price later never rewrites what was sold yesterday.</div>
-        <div><span class="n">4</span><b>Tax is dated, not hard-coded</b>Rates are rows with start dates. A new rate begins on its date and the old one ends the day before.</div>
+        <div><span class="n">1</span><b>Nothing is typed twice</b>The till sends what was bought, never what it costs. Prices, stock and discounts are worked out in one place, so a cashier cannot change them.</div>
+        <div><span class="n">2</span><b>Two tills can't oversell</b>A product is held for one till while its sale is written, so the last one on the shelf is sold once and only once.</div>
+        <div><span class="n">3</span><b>History stays history</b>Every line keeps the price it sold at. Changing a price today never rewrites what was sold yesterday.</div>
+        <div><span class="n">4</span><b>Tax follows the date</b>Every rate carries the day it starts. A new rate begins on its day and the old one ends the day before, so old receipts stay correct.</div>
       </div>
     </div>
   </div>
@@ -339,15 +321,14 @@
 <section class="sec" id="packages">
   <div class="wrap">
     <div class="sec__head">
-      <p class="mono rv"><i>manage.py</i> licence <b>--packages</b> shop,sms,payroll</p>
-      <h2 class="t-sec rv rv-d1">Eight packages. Switch on what the trade needs.</h2>
+      <h2 class="t-sec rv rv-d1">Only the parts your trade needs</h2>
       <p class="t-lead rv rv-d2">
-        Every business gets Shop. The rest are enabled per business — a disabled package leaves
-        the menu entirely and its API returns 403, so staff only see screens they use.
+        Every business gets Shop. The rest are switched on for your business only if you need
+        them, so your staff see the screens they use and nothing else.
       </p>
       <div class="sec__cta rv rv-d3">
         <a class="btn btn--dark" href="https://demo.buscarapp.net" target="_blank" rel="noopener">Open the demo</a>
-        <a class="btn" href="#plans">See plans</a>
+        <a class="btn" href="#talk">Talk to us</a>
       </div>
     </div>
 
@@ -401,7 +382,6 @@
   <div class="wrap split">
     <div>
       <div class="sec__head sec__head--left" style="margin-bottom:28px">
-        <p class="mono rv"><b>POST</b> <i>/api/sales/sync/</i></p>
         <h2 class="t-sec rv rv-d1">The till sells with no internet</h2>
         <p class="t-lead rv rv-d2">
           The product list and settings are cached on each device, so searching and selling carry
@@ -410,9 +390,9 @@
         </p>
       </div>
       <ul class="checks rv rv-d3">
-        <li><span class="ck"><svg width="11" height="11" aria-hidden="true"><use href="#i-check"/></svg></span><span><b>Never duplicated.</b> Every sale carries a client UUID, so sending it twice cannot create two.</span></li>
+        <li><span class="ck"><svg width="11" height="11" aria-hidden="true"><use href="#i-check"/></svg></span><span><b>Never duplicated.</b> Every sale carries its own mark, so sending it twice can never make two.</span></li>
         <li><span class="ck"><svg width="11" height="11" aria-hidden="true"><use href="#i-check"/></svg></span><span><b>Never refused.</b> An offline sale is not blocked for low stock or a changed price. It is recorded, and anything unusual is flagged for a manager.</span></li>
-        <li><span class="ck"><svg width="11" height="11" aria-hidden="true"><use href="#i-check"/></svg></span><span><b>Survives a power cut.</b> The production build ships a service worker, so after a restart the till opens straight to selling.</span></li>
+        <li><span class="ck"><svg width="11" height="11" aria-hidden="true"><use href="#i-check"/></svg></span><span><b>Survives a power cut.</b> The till keeps its own copy on the device, so after a restart it opens straight to selling.</span></li>
         <li><span class="ck"><svg width="11" height="11" aria-hidden="true"><use href="#i-check"/></svg></span><span><b>Tied to the cashier.</b> Queued sales belong to whoever made them, and signing out is blocked while any are waiting.</span></li>
       </ul>
     </div>
@@ -493,22 +473,19 @@
 
     <div>
       <div class="sec__head sec__head--left" style="margin-bottom:28px">
-        <p class="mono rv"><i>net.buscarapp.erp</i> <b>1.0.9</b></p>
         <h2 class="t-sec rv rv-d1">The same screens, on Android</h2>
         <p class="t-lead rv rv-d2">
-          BuscarERP is the web app packaged with Capacitor 8, plus what only a phone can do. One
-          app serves every business — the first screen asks for the business address.
+          The same screens on an Android phone, plus what only a phone can do. One app serves
+          every business — the first screen asks for your business address.
         </p>
       </div>
       <ul class="checks rv rv-d3" style="margin-bottom:26px">
-        <li><span class="ck"><svg width="11" height="11" aria-hidden="true"><use href="#i-print"/></svg></span><span><b>Bluetooth till printers.</b> 58mm and 80mm ESC/POS — Xprinter, Goojprt, MUNBYN, Rongta. Every other Print button goes through Android, so any printer or PDF works.</span></li>
-        <li><span class="ck"><svg width="11" height="11" aria-hidden="true"><use href="#i-scan"/></svg></span><span><b>Camera barcode scanning</b> at the till, in Stock and on a count sheet, through ML Kit.</span></li>
-        <li><span class="ck"><svg width="11" height="11" aria-hidden="true"><use href="#i-finger"/></svg></span><span><b>Fingerprint sign-in</b> after the first password, with the renewing key in the phone's secure store.</span></li>
+        <li><span class="ck"><svg width="11" height="11" aria-hidden="true"><use href="#i-print"/></svg></span><span><b>Bluetooth till printers.</b> 58mm and 80mm rolls — Xprinter, Goojprt, MUNBYN, Rongta. Every other Print button goes through Android, so any printer or PDF works.</span></li>
+        <li><span class="ck"><svg width="11" height="11" aria-hidden="true"><use href="#i-scan"/></svg></span><span><b>Camera barcode scanning</b> at the till, in Stock and on a count sheet.</span></li>
+        <li><span class="ck"><svg width="11" height="11" aria-hidden="true"><use href="#i-finger"/></svg></span><span><b>Fingerprint sign-in</b> after the first password, kept in the part of the phone only its owner can open.</span></li>
         <li><span class="ck"><svg width="11" height="11" aria-hidden="true"><use href="#i-bell"/></svg></span><span><b>Push alerts</b> for low stock after a sale, leave requests, staff notices and late invoices.</span></li>
       </ul>
-      <a class="btn btn--dark rv rv-d4" href="https://console.buscarapp.net/download/BuscarERP.apk">
-        <svg width="15" height="15" aria-hidden="true"><use href="#i-phone"/></svg> Download the APK
-      </a>
+      <a class="btn btn--dark rv rv-d4" href="#talk">Talk to us about the phone app</a>
     </div>
   </div>
 </section>
@@ -517,87 +494,22 @@
 <section class="sec sec--alt" id="specs">
   <div class="wrap">
     <div class="sec__head">
-      <p class="mono rv"><i>README.md</i></p>
       <h2 class="t-sec rv rv-d1">What it is, plainly</h2>
     </div>
     <div class="grid-2" style="gap:16px 48px;align-items:start">
       <ul class="specs rv rv-d2">
-        <li><span class="k">Stack</span><span class="v">Django and Django REST Framework; React and Vite. One app per module.</span></li>
-        <li><span class="k">Database</span><span class="v">A database per business, not a shared table with a tenant column. PostgreSQL 16 and 17, tested on both; SQLite for a single shop.</span></li>
-        <li><span class="k">Stock</span><span class="v">An append-only ledger of movements. A concurrency test proves two tills cannot both sell the last unit.</span></li>
-        <li><span class="k">Accounts</span><span class="v">Double entry on every event, in the same transaction. An entry that does not balance is refused.</span></li>
-        <li><span class="k">Tax</span><span class="v">VAT, NHIL and GETFund as dated rows. Calculation is mirrored in Python and JavaScript, with tests on the same figures.</span></li>
+        <li><span class="k">Database</span><span class="v">Your own database, kept apart from every other business. Nobody else’s records sit beside yours.</span></li>
+        <li><span class="k">Stock</span><span class="v">Every movement in and out is kept, and nothing is written over. Two tills can never both sell the last one.</span></li>
+        <li><span class="k">Accounts</span><span class="v">Every sale, payment and expense writes both sides of the books at once. Anything that does not balance is refused.</span></li>
+        <li><span class="k">Tax</span><span class="v">VAT, NHIL and GETFund, each with the date it starts. A new rate begins on its day and the old one ends the day before.</span></li>
       </ul>
       <ul class="specs rv rv-d3">
         <li><span class="k">Payroll</span><span class="v">GRA monthly PAYE bands, SSNIT 5.5% and 13%, Tier 1 13.5%, Tier 2 5%, insurable earnings capped.</span></li>
-        <li><span class="k">Messaging</span><span class="v">Arkesel or Hubtel per business, with delivery reports and a monthly allowance. Keys never touch the database.</span></li>
-        <li><span class="k">Payments</span><span class="v">Paystack payment links on unpaid invoices. Recorded only once Paystack confirms, by webhook or check.</span></li>
-        <li><span class="k">Backups</span><span class="v">A full copy every morning, kept off the server, last 30 retained. A failed upload keeps the local copy and retries.</span></li>
+        <li><span class="k">Messaging</span><span class="v">Texts go out through Arkesel or Hubtel, with delivery reports and a monthly allowance.</span></li>
+        <li><span class="k">Payments</span><span class="v">Paystack payment links on unpaid invoices, recorded only once Paystack confirms the money.</span></li>
+        <li><span class="k">Backups</span><span class="v">A full copy of your records every morning, kept away from the machine running the system, and the last 30 mornings are held.</span></li>
         <li><span class="k">Roles</span><span class="v">Owner, manager, cashier, storekeeper, accountant, waiter, kitchen — and the owner can build more.</span></li>
       </ul>
-    </div>
-  </div>
-</section>
-
-<!-- ============ plans ============ -->
-<section class="sec" id="plans">
-  <div class="wrap">
-    <div class="sec__head">
-      <p class="mono rv"><i>14-day trial</i> &middot; own address &middot; own database</p>
-      <h2 class="t-sec rv rv-d1">Plans</h2>
-      <p class="t-lead rv rv-d2">
-        Sign-in and branch limits are enforced in the system, not on paper. Records are never
-        deleted: an unpaid account becomes read-only and opens again as soon as it is settled.
-      </p>
-    </div>
-
-    <div class="grid-4">
-      <article class="plan rv">
-        <h3>Starter</h3>
-        <p class="plan__for">A single shop.</p>
-        <ul class="plan__list">
-          <li><svg width="13" height="13"><use href="#i-check"/></svg><span><b>Shop</b></span></li>
-          <li><svg width="13" height="13"><use href="#i-check"/></svg><span><b>3</b> sign-ins</span></li>
-          <li><svg width="13" height="13"><use href="#i-check"/></svg><span><b>1</b> branch</span></li>
-        </ul>
-        <a class="btn" href="#talk">Talk to us</a>
-      </article>
-
-      <article class="plan plan--hot rv rv-d1">
-        <span class="plan__tag">Most shops</span>
-        <h3>Standard</h3>
-        <p class="plan__for">A shop that sells on credit and texts its receipts.</p>
-        <ul class="plan__list">
-          <li><svg width="13" height="13"><use href="#i-check"/></svg><span><b>Shop</b>, SMS, Quotes and invoices</span></li>
-          <li><svg width="13" height="13"><use href="#i-check"/></svg><span><b>5</b> sign-ins</span></li>
-          <li><svg width="13" height="13"><use href="#i-check"/></svg><span><b>1</b> branch</span></li>
-          <li><svg width="13" height="13"><use href="#i-check"/></svg><span><b>300</b> SMS a month</span></li>
-        </ul>
-        <a class="btn btn--dark" href="#talk">Start a trial</a>
-      </article>
-
-      <article class="plan rv rv-d2">
-        <h3>Business</h3>
-        <p class="plan__for">Branches and staff on payroll.</p>
-        <ul class="plan__list">
-          <li><svg width="13" height="13"><use href="#i-check"/></svg><span>Standard <b>+ Reports + Payroll</b></span></li>
-          <li><svg width="13" height="13"><use href="#i-check"/></svg><span><b>15</b> sign-ins</span></li>
-          <li><svg width="13" height="13"><use href="#i-check"/></svg><span><b>3</b> branches</span></li>
-          <li><svg width="13" height="13"><use href="#i-check"/></svg><span><b>1,000</b> SMS a month</span></li>
-        </ul>
-        <a class="btn" href="#talk">Talk to us</a>
-      </article>
-
-      <article class="plan rv rv-d3">
-        <h3>Own server</h3>
-        <p class="plan__for">A restaurant that cannot depend on the internet, or a business that wants its data in the building.</p>
-        <ul class="plan__list">
-          <li><svg width="13" height="13"><use href="#i-check"/></svg><span><b>Every package</b></span></li>
-          <li><svg width="13" height="13"><use href="#i-check"/></svg><span>Runs on the shop's own network</span></li>
-          <li><svg width="13" height="13"><use href="#i-check"/></svg><span>Nightly backups you keep</span></li>
-        </ul>
-        <a class="btn" href="#talk">Talk to us</a>
-      </article>
     </div>
   </div>
 </section>
@@ -618,7 +530,11 @@
           <a class="btn btn--dark btn--lg" href="https://demo.buscarapp.net" target="_blank" rel="noopener">
             Open the demo <svg class="arw" width="15" height="15" aria-hidden="true"><use href="#i-arw"/></svg>
           </a>
-          <a class="btn btn--lg" href="mailto:hello@buscarhub.net?subject=BuscarApp%20trial">Ask for a trial</a>
+          <!-- WhatsApp: put the business number in international form with no +, spaces or
+               dashes (for example 233244123456) and delete this comment to turn the button on.
+          <a class="btn btn--lg" href="https://wa.me/233XXXXXXXXX" target="_blank" rel="noopener">Chat on WhatsApp</a>
+          -->
+          <a class="btn btn--lg" href="mailto:hello@buscarhub.net?subject=BuscarApp">Send us an email</a>
         </div>
       </div>
     </div>
@@ -651,15 +567,14 @@
           <li><a href="#packages">Packages</a></li>
           <li><a href="#offline">Offline</a></li>
           <li><a href="#specs">Specs</a></li>
-          <li><a href="#plans">Plans</a></li>
         </ul>
       </div>
       <div>
         <h4>Start</h4>
         <ul>
           <li><a href="https://demo.buscarapp.net" target="_blank" rel="noopener">Live demo</a></li>
-          <li><a href="https://console.buscarapp.net/download/BuscarERP.apk">Android app</a></li>
-          <li><a href="#talk">Ask for a trial</a></li>
+          <li><a href="#app">Android app</a></li>
+          <li><a href="#talk">Talk to us</a></li>
         </ul>
       </div>
       <div>
