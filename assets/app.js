@@ -1,4 +1,4 @@
-/* BuscarHub — page behaviour. No dependencies. */
+/* Buscar ERP — page behaviour. No dependencies. */
 (function () {
   'use strict';
 

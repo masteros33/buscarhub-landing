@@ -4,7 +4,7 @@
    not guessed: neutral/accent ramps, radii, shadows, type and metrics.
 
    Accent note: BoardUI's own accent ramp is blue. This build runs the
-   BuscarApp product green instead, as a full 50–950 ramp in the same
+   Buscar ERP product green instead, as a full 50–950 ramp in the same
    shape, so 600/700 land on the product's --brand (#16a34a) and
    --brand-strong (#15803d) and 900 on --brand-deep (#14532d).
    BoardUI's blue is kept below, commented out, to switch back.
@@ -25,7 +25,7 @@
   --neutral-950:#0a0a0a;
   --white:#ffffff;
 
-  /* ---- accent ramp: BuscarApp green ---- */
+  /* ---- accent ramp: Buscar ERP green ---- */
   --accent-50:#f0fdf4;
   --accent-100:#dcfce7;
   --accent-200:#bbf7d0;

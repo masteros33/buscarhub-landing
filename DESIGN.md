@@ -1,13 +1,13 @@
-# BuscarHub design stack
+# Buscar ERP design stack
 
-The one source of truth for how the marketing site, the BuscarApp web app and the
-BuscarERP Android app should look. Everything here is in
+The one source of truth for how the marketing site, the Buscar ERP web app and the
+Buscar ERP Android app should look. Everything here is in
 [`assets/tokens.css`](assets/tokens.css) — import that file and use the variables,
 don't retype the hex codes.
 
 Reference: the token structure, scale and typographic treatment follow the
 **BoardUI** design system (boardui.com), recorded 13 Nov 2026. The accent ramp
-is BuscarApp's own green in place of BoardUI's blue.
+is Buscar ERP's own green in place of BoardUI's blue.
 
 ---
 
@@ -30,7 +30,7 @@ Every surface, border and piece of text comes from this ramp. Nothing else.
 | `--neutral-900` | `#171717` | — |
 | `--neutral-950` | `#0a0a0a` | **primary text**, dark/primary buttons |
 
-### Accent ramp — BuscarApp green
+### Accent ramp — Buscar ERP green
 Maps onto the product's existing brand variables, so the app needs no repaint.
 
 | Token | Hex | Product variable |
@@ -159,7 +159,7 @@ Non-negotiable:
 
 ## 7. Applying this to the app
 
-The BuscarApp web UI (`frontend/src/styles.css`) already has a parallel token
+The Buscar ERP web UI (`frontend/src/styles.css`) already has a parallel token
 set. To align it:
 
 1. Keep the product's green — it already matches `--accent-600/700/900`.

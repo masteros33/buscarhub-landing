@@ -1,7 +1,6 @@
 # buscarhub-site
 
-Marketing site for **BuscarApp**, the business software BuscarHub sells to
-Ghanaian SMEs. Static: no build step, no framework, no dependencies.
+Marketing site for **Buscar ERP**, business software for Ghanaian SMEs. Static: no build step, no framework, no dependencies.
 
 ```
 index.html          the page
@@ -27,17 +26,17 @@ Then open <http://127.0.0.1:8765/>.
 
 See [DESIGN.md](DESIGN.md). Everything visual comes from `assets/tokens.css` —
 import it and use the variables rather than retyping hex codes. The same tokens
-are being applied to the BuscarApp web app so the site and the product match.
+are being applied to the Buscar ERP web app so the site and the product match.
 
 ## Content
 
-Every figure on the page comes from the BuscarApp documentation: the packages,
+Every figure on the page comes from the Buscar ERP documentation: the packages,
 the SSNIT and PAYE rates, the batch and production behaviour, the supported
 printer models, the Capacitor and PostgreSQL versions. No prices are shown,
 because pricing is a business decision and is not in the code.
 
 ## Deployment
 
-Deployed to the BuscarHub server as plain static files behind Apache, with
+Deployed to the Buscar ERP server as plain static files behind Apache, with
 Let's Encrypt for TLS. Hostnames, paths and the deploy and certificate scripts
 are kept with the infrastructure, not in this repository.
