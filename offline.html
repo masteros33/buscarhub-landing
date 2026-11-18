@@ -1,0 +1,228 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Selling with no internet — BuscarHub</title>
+<meta name="description" content="The till keeps selling with no connection. Sales wait on the device and go up when the network returns, never duplicated and never refused.">
+<meta name="theme-color" content="#ffffff">
+<link rel="canonical" href="https://buscarhub.net/offline.html">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Selling with no internet — BuscarHub">
+<meta property="og:description" content="The till keeps selling with no connection. Sales wait on the device and go up when the network returns, never duplicated and never refused.">
+<meta property="og:url" content="https://buscarhub.net/offline.html">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/tokens.css">
+<link rel="stylesheet" href="assets/styles.css">
+<link rel="stylesheet" href="assets/motion.css">
+</head>
+<body>
+
+<svg width="0" height="0" style="position:absolute" aria-hidden="true" focusable="false"><defs>
+<symbol id="i-check" viewBox="0 0 24 24"><path d="M20 6 9 17l-5-5" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/></symbol>
+<symbol id="i-arw" viewBox="0 0 24 24"><path d="M5 12h13m-5-6 6 6-6 6" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></symbol>
+<symbol id="i-arw-sm" viewBox="0 0 24 24"><path d="M7 17 17 7m0 0H9m8 0v8" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></symbol>
+<symbol id="i-shop" viewBox="0 0 24 24"><path d="M3 9h18l-1.4-4.2A1.5 1.5 0 0 0 18.2 4H5.8a1.5 1.5 0 0 0-1.4 1.1L3 9Zm1 0v10a1 1 0 0 0 1 1h14a1 1 0 0 0 1-1V9M9 20v-6h6v6" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"/></symbol>
+<symbol id="i-box" viewBox="0 0 24 24"><path d="m12 3 8.5 4.6v8.8L12 21l-8.5-4.6V7.6L12 3Z" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linejoin="round"/><path d="M3.5 7.6 12 12m0 0 8.5-4.4M12 12v9" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linejoin="round"/></symbol>
+<symbol id="i-book" viewBox="0 0 24 24"><path d="M4 5.5A2.5 2.5 0 0 1 6.5 3H19v15H6.5A2.5 2.5 0 0 0 4 20.5v-15Z" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linejoin="round"/><path d="M4 20.5A2.5 2.5 0 0 1 6.5 18H19v3H6.5A2.5 2.5 0 0 1 4 20.5ZM8.5 7.5h6M8.5 11h4" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round"/></symbol>
+<symbol id="i-users" viewBox="0 0 24 24"><circle cx="9" cy="8" r="3.3" fill="none" stroke="currentColor" stroke-width="1.7"/><path d="M2.8 20a6.2 6.2 0 0 1 12.4 0M16.5 5.2a3.4 3.4 0 0 1 0 6.6M18 20a6.3 6.3 0 0 0-2-4.6" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round"/></symbol>
+<symbol id="i-chart" viewBox="0 0 24 24"><path d="M4 20V4M4 20h16" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round"/><path d="M8 20v-6M12.5 20V8M17 20v-9" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></symbol>
+<symbol id="i-msg" viewBox="0 0 24 24"><path d="M21 11.6a7.9 7.9 0 0 1-8.4 7.9 9 9 0 0 1-2.6-.4L5 21l1.2-3.6A7.6 7.6 0 0 1 4 11.6C4 7.2 7.8 4 12.5 4S21 7.2 21 11.6Z" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linejoin="round"/></symbol>
+<symbol id="i-invoice" viewBox="0 0 24 24"><path d="M6 3h9l4 4v14H6V3Z" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linejoin="round"/><path d="M14.5 3v4.5H19M9 12h6M9 15.5h6M9 8.5h2.5" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/></symbol>
+<symbol id="i-payroll" viewBox="0 0 24 24"><rect x="3" y="6" width="18" height="13" rx="2" fill="none" stroke="currentColor" stroke-width="1.7"/><circle cx="9" cy="12.5" r="2.3" fill="none" stroke="currentColor" stroke-width="1.6"/><path d="M14 10.5h4M14 14.5h4M8 6V4.5A1.5 1.5 0 0 1 9.5 3h5A1.5 1.5 0 0 1 16 4.5V6" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/></symbol>
+<symbol id="i-pill" viewBox="0 0 24 24"><rect x="2.5" y="8.6" width="19" height="7" rx="3.5" transform="rotate(-40 12 12)" fill="none" stroke="currentColor" stroke-width="1.7"/><path d="M8.8 15.2 15.2 8.8" stroke="currentColor" stroke-width="1.7"/></symbol>
+<symbol id="i-factory" viewBox="0 0 24 24"><path d="M3 20V10l5 3V10l5 3V7l8 4v9H3Z" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linejoin="round"/><path d="M7 20v-3.5M12 20v-3.5M17 20v-3.5" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></symbol>
+<symbol id="i-fork" viewBox="0 0 24 24"><path d="M6 3v6a2.5 2.5 0 0 0 5 0V3M8.5 11v10M17 3c-1.6 1.4-2.2 3-2.2 5.2 0 1.6.6 2.6 1.6 3.3V21" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"/></symbol>
+<symbol id="i-wifi" viewBox="0 0 24 24"><path d="M2.5 8.6a14 14 0 0 1 19 0M6 12.4a9 9 0 0 1 12 0M9.4 16.1a4.2 4.2 0 0 1 5.2 0" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"/><circle cx="12" cy="19.4" r="1.2" fill="currentColor"/></symbol>
+<symbol id="i-wifi-off" viewBox="0 0 24 24"><path d="M6 12.4a9 9 0 0 1 5-2.3M9.4 16.1a4.2 4.2 0 0 1 3.6-.6M2.5 8.6A14 14 0 0 1 8 5.3M15 5.5a14 14 0 0 1 6.5 3.1" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"/><path d="M3 3l18 18" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></symbol>
+<symbol id="i-clock" viewBox="0 0 24 24"><circle cx="12" cy="12" r="8.5" fill="none" stroke="currentColor" stroke-width="1.8"/><path d="M12 7.4V12l3.2 2" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/></symbol>
+<symbol id="i-cloud" viewBox="0 0 24 24"><path d="M7 18a4 4 0 0 1-.4-8A5.5 5.5 0 0 1 17.3 9 3.7 3.7 0 0 1 17 18" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"/><path d="M12 21v-8m-2.6 2.6L12 13l2.6 2.6" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"/></symbol>
+<symbol id="i-branch" viewBox="0 0 24 24"><circle cx="6.5" cy="5.5" r="2.3" fill="none" stroke="currentColor" stroke-width="1.7"/><circle cx="6.5" cy="18.5" r="2.3" fill="none" stroke="currentColor" stroke-width="1.7"/><circle cx="17.5" cy="12" r="2.3" fill="none" stroke="currentColor" stroke-width="1.7"/><path d="M6.5 7.9v8.2M8.9 6.6c4 .5 6.2 2 6.4 5M8.9 17.4c4-.5 6.2-2 6.4-5" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/></symbol>
+<symbol id="i-upload" viewBox="0 0 24 24"><path d="M4 15v3.5A1.5 1.5 0 0 0 5.5 20h13a1.5 1.5 0 0 0 1.5-1.5V15" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round"/><path d="M12 16V4m-4 4 4-4 4 4" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"/></symbol>
+<symbol id="i-shield" viewBox="0 0 24 24"><path d="M12 3l7.5 2.6v6.2c0 4.3-3 7.6-7.5 9.2-4.5-1.6-7.5-4.9-7.5-9.2V5.6L12 3Z" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linejoin="round"/><path d="m8.8 12 2.3 2.3 4.1-4.3" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></symbol>
+<symbol id="i-print" viewBox="0 0 24 24"><path d="M7 9V3.8h10V9M7 17H5a1.5 1.5 0 0 1-1.5-1.5v-5A1.5 1.5 0 0 1 5 9h14a1.5 1.5 0 0 1 1.5 1.5v5A1.5 1.5 0 0 1 19 17h-2" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"/><rect x="7" y="14" width="10" height="6.3" rx="1" fill="none" stroke="currentColor" stroke-width="1.7"/></symbol>
+<symbol id="i-scan" viewBox="0 0 24 24"><path d="M4 8.5V6a2 2 0 0 1 2-2h2.5M15.5 4H18a2 2 0 0 1 2 2v2.5M20 15.5V18a2 2 0 0 1-2 2h-2.5M8.5 20H6a2 2 0 0 1-2-2v-2.5" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/><path d="M4 12h16" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/></symbol>
+<symbol id="i-finger" viewBox="0 0 24 24"><path d="M12 3a8.5 8.5 0 0 0-8.5 8.5M12 3a8.5 8.5 0 0 1 8.5 8.5M12 6.6a5 5 0 0 0-5 5v2.9M12 6.6a5 5 0 0 1 5 5v4.4M12 10.2a1.8 1.8 0 0 0-1.8 1.8v6.5M12 10.2a1.8 1.8 0 0 1 1.8 1.8v7.6" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/></symbol>
+<symbol id="i-bell" viewBox="0 0 24 24"><path d="M6 10a6 6 0 0 1 12 0c0 3.4.8 5.2 1.6 6.2.4.5 0 1.3-.7 1.3H5.1c-.7 0-1.1-.8-.7-1.3C5.2 15.2 6 13.4 6 10Z" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linejoin="round"/><path d="M10 20.3a2.2 2.2 0 0 0 4 0" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round"/></symbol>
+<symbol id="i-phone" viewBox="0 0 24 24"><rect x="6" y="2.6" width="12" height="18.8" rx="2.5" fill="none" stroke="currentColor" stroke-width="1.7"/><path d="M10.6 5.2h2.8" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/><circle cx="12" cy="18.2" r="1" fill="currentColor"/></symbol>
+<symbol id="i-code" viewBox="0 0 24 24"><path d="m8.5 8-4.5 4 4.5 4M15.5 8l4.5 4-4.5 4" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></symbol>
+<symbol id="i-db" viewBox="0 0 24 24"><ellipse cx="12" cy="6" rx="7.5" ry="3" fill="none" stroke="currentColor" stroke-width="1.7"/><path d="M4.5 6v12c0 1.7 3.4 3 7.5 3s7.5-1.3 7.5-3V6M4.5 12c0 1.7 3.4 3 7.5 3s7.5-1.3 7.5-3" fill="none" stroke="currentColor" stroke-width="1.7"/></symbol>
+</defs></svg>
+
+<!-- ============ header ============ -->
+<header class="hdr" id="hdr">
+  <div class="wrap hdr__in">
+    <a class="brand" href="index.html">
+      <svg class="brand__mark" viewBox="0 0 30 30" aria-hidden="true">
+        <rect width="30" height="30" rx="8" fill="#16a34a"/>
+        <rect x="7" y="7" width="7" height="7" rx="2" fill="#ffffff"/>
+        <rect x="16" y="7" width="7" height="7" rx="2" fill="#ffffff" opacity=".55"/>
+        <rect x="7" y="16" width="7" height="7" rx="2" fill="#ffffff" opacity=".55"/>
+        <rect x="16" y="16" width="7" height="7" rx="2" fill="#ffffff"/>
+      </svg>
+      <span class="brand__name">BuscarHub</span>
+    </a>
+    <nav class="nav" id="nav" aria-label="Sections">
+      <a href="how-it-works.html">How it works</a>
+      <a href="packages.html">Packages</a>
+      <a href="offline.html" aria-current="page">Offline</a>
+      <a href="android.html">Android app</a>
+      <a href="specs.html">Specs</a>
+    </nav>
+    <div class="hdr__end">
+      <a class="btn btn--hide" href="https://demo.buscarapp.net" target="_blank" rel="noopener">Demo</a>
+      <a class="btn btn--dark" href="talk.html">Get a trial</a>
+      <button class="burger" id="burger" aria-expanded="false" aria-controls="nav" aria-label="Menu"><i></i><i></i><i></i></button>
+    </div>
+  </div>
+</header>
+
+<main id="top">
+
+<!-- ============ offline ============ -->
+<section class="sec sec--alt" id="offline">
+  <div class="wrap split">
+    <div>
+      <div class="sec__head sec__head--left" style="margin-bottom:28px">
+        <h2 class="t-sec rv rv-d1">The till sells with no internet</h2>
+        <p class="t-lead rv rv-d2">
+          The product list and settings are cached on each device, so searching and selling carry
+          on with no connection. Sales made offline wait on that device and go up when the network
+          returns.
+        </p>
+      </div>
+      <ul class="checks rv rv-d3">
+        <li><span class="ck"><svg width="11" height="11" aria-hidden="true"><use href="#i-check"/></svg></span><span><b>Never duplicated.</b> Every sale carries its own mark, so sending it twice can never make two.</span></li>
+        <li><span class="ck"><svg width="11" height="11" aria-hidden="true"><use href="#i-check"/></svg></span><span><b>Never refused.</b> An offline sale is not blocked for low stock or a changed price. It is recorded, and anything unusual is flagged for a manager.</span></li>
+        <li><span class="ck"><svg width="11" height="11" aria-hidden="true"><use href="#i-check"/></svg></span><span><b>Survives a power cut.</b> The till keeps its own copy on the device, so after a restart it opens straight to selling.</span></li>
+        <li><span class="ck"><svg width="11" height="11" aria-hidden="true"><use href="#i-check"/></svg></span><span><b>Tied to the cashier.</b> Queued sales belong to whoever made them, and signing out is blocked while any are waiting.</span></li>
+      </ul>
+    </div>
+
+    <article class="card rv rv-d2">
+      <div class="card__vis" style="min-height:280px">
+        <div class="off" role="img" aria-label="The connection drops, three sales queue on the device marked waiting, the connection returns, and all three are sent and marked delivered.">
+          <div class="off__bar">
+            <span class="sig">
+              <span class="s-on"><svg width="17" height="17" aria-hidden="true"><use href="#i-wifi"/></svg></span>
+              <span class="s-off"><svg width="17" height="17" aria-hidden="true"><use href="#i-wifi-off"/></svg></span>
+            </span>
+            <span class="txt">
+              <span class="o1">Connected &middot; everything saved</span>
+              <span class="o2">No internet &middot; still selling</span>
+              <span class="o3">Back online &middot; sending</span>
+            </span>
+          </div>
+          <div class="off__q">
+            <div class="hd">Waiting on this device</div>
+            <div class="sale sale--1">
+              <span class="st"><span class="w"><svg width="15" height="15" aria-hidden="true"><use href="#i-clock"/></svg></span><span class="d"><svg width="15" height="15" aria-hidden="true"><use href="#i-check"/></svg></span></span>
+              <span class="id">#1043</span><span>Ama &middot; cash</span><span class="amt">63.00</span>
+            </div>
+            <div class="sale sale--2">
+              <span class="st"><span class="w"><svg width="15" height="15" aria-hidden="true"><use href="#i-clock"/></svg></span><span class="d"><svg width="15" height="15" aria-hidden="true"><use href="#i-check"/></svg></span></span>
+              <span class="id">#1044</span><span>Ama &middot; momo</span><span class="amt">128.50</span>
+            </div>
+            <div class="sale sale--3">
+              <span class="st"><span class="w"><svg width="15" height="15" aria-hidden="true"><use href="#i-clock"/></svg></span><span class="d"><svg width="15" height="15" aria-hidden="true"><use href="#i-check"/></svg></span></span>
+              <span class="id">#1045</span><span>Ama &middot; cash</span><span class="amt">41.00</span>
+            </div>
+          </div>
+          <div class="off__out"><svg width="15" height="15" aria-hidden="true"><use href="#i-cloud"/></svg> 3 sales sent, none doubled</div>
+        </div>
+      </div>
+      <div class="card__foot">
+        <div class="row"><h3>Offline queue</h3><svg width="15" height="15" aria-hidden="true"><use href="#i-arw"/></svg></div>
+        <p>A session lasts 7 days without a connection, so tills are not signed out at night.</p>
+      </div>
+    </article>
+  </div>
+</section>
+
+<!-- ============ cta ============ -->
+<section class="sec sec--tight" id="talk" style="padding-top:0">
+  <div class="wrap">
+    <div class="cta rv">
+      <div class="prism" aria-hidden="true"><i></i><i></i><i></i><i></i></div>
+      <div class="cta__in">
+        <h2 class="t-sec">Set your shop up on a trial</h2>
+        <p class="t-lead">
+          Send your product list and we will put your business on a 14-day trial at its own
+          address, with your products, opening stock, customers and suppliers brought in from
+          Excel or CSV.
+        </p>
+        <div class="hero__cta">
+          <a class="btn btn--dark btn--lg" href="https://demo.buscarapp.net" target="_blank" rel="noopener">
+            Open the demo <svg class="arw" width="15" height="15" aria-hidden="true"><use href="#i-arw"/></svg>
+          </a>
+          <!-- WhatsApp: put the business number in international form with no +, spaces or
+               dashes (for example 233244123456) and delete this comment to turn the button on.
+          <a class="btn btn--lg" href="https://wa.me/233XXXXXXXXX" target="_blank" rel="noopener">Chat on WhatsApp</a>
+          -->
+          <a class="btn btn--lg" href="mailto:hello@buscarhub.net?subject=BuscarApp">Send us an email</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+</main>
+
+<!-- ============ footer ============ -->
+<footer class="ft">
+  <div class="wrap">
+    <div class="ft__grid">
+      <div>
+        <a class="brand" href="index.html">
+          <svg class="brand__mark" viewBox="0 0 30 30" aria-hidden="true">
+            <rect width="30" height="30" rx="8" fill="#16a34a"/>
+            <rect x="7" y="7" width="7" height="7" rx="2" fill="#ffffff"/>
+            <rect x="16" y="7" width="7" height="7" rx="2" fill="#ffffff" opacity=".55"/>
+            <rect x="7" y="16" width="7" height="7" rx="2" fill="#ffffff" opacity=".55"/>
+            <rect x="16" y="16" width="7" height="7" rx="2" fill="#ffffff"/>
+          </svg>
+          <span class="brand__name">BuscarHub</span>
+        </a>
+        <p>Business software for Ghanaian SMEs. One record for selling, stock, customers, accounts, payroll and reports.</p>
+      </div>
+      <div>
+        <h4>Product</h4>
+        <ul>
+          <li><a href="how-it-works.html">How it works</a></li>
+          <li><a href="packages.html">Packages</a></li>
+          <li><a href="offline.html">Offline</a></li>
+          <li><a href="specs.html">Specs</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Start</h4>
+        <ul>
+          <li><a href="https://demo.buscarapp.net" target="_blank" rel="noopener">Live demo</a></li>
+          <li><a href="android.html">Android app</a></li>
+          <li><a href="talk.html">Talk to us</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Built for Ghana</h4>
+        <ul>
+          <li><a href="specs.html">Cedis and GRA tax</a></li>
+          <li><a href="packages.html">PAYE and SSNIT</a></li>
+          <li><a href="offline.html">No-internet selling</a></li>
+          <li><a href="android.html">Bluetooth receipts</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="ft__btm">
+      <span>&copy; <span id="yr">2026</span> BuscarHub</span>
+      <span>Accra, Ghana</span>
+    </div>
+  </div>
+</footer>
+
+<script src="assets/app.js" defer></script>
+</body>
+</html>
