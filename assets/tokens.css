@@ -94,7 +94,7 @@
   --shadow-lift:0 -2px 13px 0 rgba(0,0,0,.043);
 
   /* ---- type ---- */
-  --font-sans:"Inter","Inter Fallback",ui-sans-serif,system-ui,sans-serif;
+  --font-sans:"Plus Jakarta Sans",ui-sans-serif,system-ui,sans-serif;
   --font-mono:"JetBrains Mono",ui-monospace,SFMono-Regular,Menlo,Consolas,monospace;
   --tracking-tight:-0.02em;
 

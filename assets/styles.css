@@ -1,5 +1,5 @@
 /* Buscar ERP — built on the BoardUI token set (see tokens.css).
-   Flat white, hairline borders, Inter at weight 500, 10px controls,
+   Flat white, hairline borders, Plus Jakarta Sans at weight 500, 10px controls,
    14–24px cards, near-invisible shadows. */
 
 *,*::before,*::after{box-sizing:border-box}
@@ -14,7 +14,6 @@ body{
   font-weight:400;
   -webkit-font-smoothing:antialiased;
   text-rendering:optimizeLegibility;
-  font-feature-settings:"cv05","cv11";
   overflow-x:hidden;
 }
 img,svg{max-width:100%;display:block}
