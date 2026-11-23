@@ -4,12 +4,12 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
 <title>Packages — Buscar ERP</title>
-<meta name="description" content="Every business gets Shop. Quotes and invoices, SMS, reports, payroll, batches and expiry, production, restaurant and bar are switched on only if you need them.">
+<meta name="description" content="Buy only what your business runs on: Shop, HRM, Payroll or CRM, each on its own or together, with quotes and invoices, SMS and reports added to any of them.">
 <meta name="theme-color" content="#ffffff">
 <link rel="canonical" href="https://buscarhub.net/packages.html">
 <meta property="og:type" content="website">
 <meta property="og:title" content="Packages — Buscar ERP">
-<meta property="og:description" content="Every business gets Shop. Quotes and invoices, SMS, reports, payroll, batches and expiry, production, restaurant and bar are switched on only if you need them.">
+<meta property="og:description" content="Buy only what your business runs on: Shop, HRM, Payroll or CRM, each on its own or together, with quotes and invoices, SMS and reports added to any of them.">
 <meta property="og:url" content="https://buscarhub.net/packages.html">
 <meta name="twitter:card" content="summary_large_image">
 <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
@@ -50,6 +50,9 @@
 <symbol id="i-bell" viewBox="0 0 24 24"><path d="M6 10a6 6 0 0 1 12 0c0 3.4.8 5.2 1.6 6.2.4.5 0 1.3-.7 1.3H5.1c-.7 0-1.1-.8-.7-1.3C5.2 15.2 6 13.4 6 10Z" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linejoin="round"/><path d="M10 20.3a2.2 2.2 0 0 0 4 0" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round"/></symbol>
 <symbol id="i-phone" viewBox="0 0 24 24"><rect x="6" y="2.6" width="12" height="18.8" rx="2.5" fill="none" stroke="currentColor" stroke-width="1.7"/><path d="M10.6 5.2h2.8" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/><circle cx="12" cy="18.2" r="1" fill="currentColor"/></symbol>
 <symbol id="i-code" viewBox="0 0 24 24"><path d="m8.5 8-4.5 4 4.5 4M15.5 8l4.5 4-4.5 4" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></symbol>
+<symbol id="i-crm" viewBox="0 0 24 24"><path d="M4 5h4v14H4zM10 5h4v9h-4zM16 5h4v5h-4z" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linejoin="round"/></symbol>
+<symbol id="i-gate" viewBox="0 0 24 24"><path d="M4 21V8l8-5 8 5v13M8 21v-8h8v8M12 13v8" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"/></symbol>
+<symbol id="i-hrm" viewBox="0 0 24 24"><rect x="5" y="3" width="14" height="18" rx="2" fill="none" stroke="currentColor" stroke-width="1.7"/><circle cx="12" cy="10" r="2.4" fill="none" stroke="currentColor" stroke-width="1.6"/><path d="M8.5 16.5a3.6 3.6 0 0 1 7 0" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/></symbol>
 <symbol id="i-db" viewBox="0 0 24 24"><ellipse cx="12" cy="6" rx="7.5" ry="3" fill="none" stroke="currentColor" stroke-width="1.7"/><path d="M4.5 6v12c0 1.7 3.4 3 7.5 3s7.5-1.3 7.5-3V6M4.5 12c0 1.7 3.4 3 7.5 3s7.5-1.3 7.5-3" fill="none" stroke="currentColor" stroke-width="1.7"/></symbol>
 </defs></svg>
 
@@ -87,10 +90,12 @@
 <section class="sec" id="packages">
   <div class="wrap">
     <div class="sec__head">
-      <h2 class="t-sec rv rv-d1">Only the parts your trade needs</h2>
+      <span class="pill rv"><span class="pill__dot"></span>Pay for what you use</span>
+      <h2 class="t-sec rv rv-d1">Buy the parts your business runs on</h2>
       <p class="t-lead rv rv-d2">
-        Every business gets Shop. The rest are switched on for your business only if you need
-        them, so your staff see the screens they use and nothing else.
+        Each package works on its own. A shop takes Shop; an office takes HRM and Payroll; a
+        sales team takes CRM. Put them together whenever you need to, and every login sees only
+        the screens that person uses.
       </p>
       <div class="sec__cta rv rv-d3">
         <a class="btn btn--dark" href="https://demo.buscarapp.net" target="_blank" rel="noopener">Open the demo</a>
@@ -98,47 +103,124 @@
       </div>
     </div>
 
-    <div class="grid-4">
-      <article class="card card--sm rv"><div class="card__foot" style="padding:20px">
-        <svg width="20" height="20" aria-hidden="true" style="margin-bottom:12px"><use href="#i-shop"/></svg>
-        <div class="row"><h3>Shop</h3><span class="chip"><em>included</em></span></div>
-        <p>Till, stock, buying, customers and credit, expenses, daily close, the owner's overview, accounts, bank and cash, staff.</p>
-      </div></article>
+    <h3 class="t-sub rv">The packages</h3>
+    <div class="grid-3 fams">
+      <article class="fam rv rv-d1">
+        <div class="fam__top"><span class="fam__ico"><svg width="22" height="22" aria-hidden="true"><use href="#i-shop"/></svg></span></div>
+        <h3>Shop</h3>
+        <p class="fam__who">For shops, supermarkets, pharmacies, wholesalers and anyone who sells over a counter.</p>
+        <ul class="plan__list">
+          <li><svg width="14" height="14" aria-hidden="true"><use href="#i-check"/></svg><span>The till, with split payments, holds and receipts that name the branch</span></li><li><svg width="14" height="14" aria-hidden="true"><use href="#i-check"/></svg><span>Stock across branches, counts, transfers and the reorder planner</span></li><li><svg width="14" height="14" aria-hidden="true"><use href="#i-check"/></svg><span>Buying from suppliers, customers on credit and statements</span></li><li><svg width="14" height="14" aria-hidden="true"><use href="#i-check"/></svg><span>Expenses, daily close, accounts, bank and cash</span></li><li><svg width="14" height="14" aria-hidden="true"><use href="#i-check"/></svg><span>Keeps selling with no internet</span></li><li><svg width="14" height="14" aria-hidden="true"><use href="#i-check"/></svg><span>Staff clocking in and leave</span></li>
+        </ul>
+      </article>
+      <article class="fam rv rv-d2">
+        <div class="fam__top"><span class="fam__ico"><svg width="22" height="22" aria-hidden="true"><use href="#i-hrm"/></svg></span></div>
+        <h3>HRM</h3>
+        <p class="fam__who">For any business with staff, with or without a till.</p>
+        <ul class="plan__list">
+          <li><svg width="14" height="14" aria-hidden="true"><use href="#i-check"/></svg><span>One record for each person: job, pay details, next of kin</span></li><li><svg width="14" height="14" aria-hidden="true"><use href="#i-check"/></svg><span>Clocking in and out, lateness and absence</span></li><li><svg width="14" height="14" aria-hidden="true"><use href="#i-check"/></svg><span>Leave asked for, approved or refused, counted in working days</span></li><li><svg width="14" height="14" aria-hidden="true"><use href="#i-check"/></svg><span>Ghana's public holidays, never counted as leave</span></li><li><svg width="14" height="14" aria-hidden="true"><use href="#i-check"/></svg><span>Who is away when, and how much leave each person has left</span></li><li><svg width="14" height="14" aria-hidden="true"><use href="#i-check"/></svg><span>Bring the staff list in from a spreadsheet</span></li>
+        </ul>
+      </article>
+      <article class="fam rv rv-d3">
+        <div class="fam__top"><span class="fam__ico"><svg width="22" height="22" aria-hidden="true"><use href="#i-payroll"/></svg></span></div>
+        <h3>Payroll</h3>
+        <p class="fam__who">For the person who pays salaries every month.</p>
+        <ul class="plan__list">
+          <li><svg width="14" height="14" aria-hidden="true"><use href="#i-check"/></svg><span>PAYE by the GRA's bands and SSNIT 5.5% and 13%, Tier 1 and Tier 2</span></li><li><svg width="14" height="14" aria-hidden="true"><use href="#i-check"/></svg><span>Your own allowances and deductions, with the usual Ghanaian ones ready</span></li><li><svg width="14" height="14" aria-hidden="true"><use href="#i-check"/></svg><span>Provident fund with the business's share, bonus at 5%, overtime</span></li><li><svg width="14" height="14" aria-hidden="true"><use href="#i-check"/></svg><span>Loans taken back month by month</span></li><li><svg width="14" height="14" aria-hidden="true"><use href="#i-check"/></svg><span>Payslips laid out as Ghanaian payslips are, which staff see for themselves</span></li><li><svg width="14" height="14" aria-hidden="true"><use href="#i-check"/></svg><span>PAYE and SSNIT schedules, and what is still to be sent</span></li>
+        </ul>
+      </article>
+      <article class="fam rv rv-d4">
+        <div class="fam__top"><span class="fam__ico"><svg width="22" height="22" aria-hidden="true"><use href="#i-crm"/></svg></span></div>
+        <h3>CRM</h3>
+        <p class="fam__who">For businesses that win customers before they sell to them.</p>
+        <ul class="plan__list">
+          <li><svg width="14" height="14" aria-hidden="true"><use href="#i-check"/></svg><span>Leads, turned into a customer and a deal in one step</span></li><li><svg width="14" height="14" aria-hidden="true"><use href="#i-check"/></svg><span>Deals on a board by step, with what each is worth</span></li><li><svg width="14" height="14" aria-hidden="true"><use href="#i-check"/></svg><span>Calls and visits with a day and a name, late ones marked</span></li><li><svg width="14" height="14" aria-hidden="true"><use href="#i-check"/></svg><span>The people at each customer</span></li><li><svg width="14" height="14" aria-hidden="true"><use href="#i-check"/></svg><span>Each customer's whole history on one page, purchases included</span></li><li><svg width="14" height="14" aria-hidden="true"><use href="#i-check"/></svg><span>Deals going cold, and why deals are lost</span></li>
+        </ul>
+      </article>
+      <article class="fam fam--soon rv rv-d5">
+        <div class="fam__top"><span class="fam__ico"><svg width="22" height="22" aria-hidden="true"><use href="#i-gate"/></svg></span><span class="chip"><em>coming soon</em></span></div>
+        <h3>Logbook</h3>
+        <p class="fam__who">For gates, offices and yards that keep a log.</p>
+        <ul class="plan__list">
+          <li><svg width="14" height="14" aria-hidden="true"><use href="#i-check"/></svg><span>Visitors signed in and out</span></li><li><svg width="14" height="14" aria-hidden="true"><use href="#i-check"/></svg><span>Vehicles and deliveries at the gate</span></li><li><svg width="14" height="14" aria-hidden="true"><use href="#i-check"/></svg><span>Keys and equipment: who has what</span></li><li><svg width="14" height="14" aria-hidden="true"><use href="#i-check"/></svg><span>Incidents, and the duty officer's shift log</span></li><li><svg width="14" height="14" aria-hidden="true"><use href="#i-check"/></svg><span>A record that cannot be changed afterwards</span></li>
+        </ul>
+      </article>
+    </div>
+
+    <h3 class="t-sub rv">Add to any of them</h3>
+    <div class="grid-3">
       <article class="card card--sm rv rv-d1"><div class="card__foot" style="padding:20px">
-        <svg width="20" height="20" aria-hidden="true" style="margin-bottom:12px"><use href="#i-invoice"/></svg>
-        <h3>Quotes and invoices</h3>
-        <p>For businesses that bill rather than ring up. Sales orders, part payments, credit notes and Paystack payment links.</p>
+        <div class="row"><svg width="20" height="20" aria-hidden="true"><use href="#i-invoice"/></svg></div>
+        <h3 style="margin-top:12px">Quotes and invoices</h3>
+        <p>Quotations, sales orders, invoices on credit terms, credit notes and Paystack payment links.</p>
       </div></article>
       <article class="card card--sm rv rv-d2"><div class="card__foot" style="padding:20px">
-        <svg width="20" height="20" aria-hidden="true" style="margin-bottom:12px"><use href="#i-msg"/></svg>
-        <h3>SMS messages</h3>
-        <p>Receipts by text, reminders to customers who owe, and a morning text with yesterday's sales and what is low. Delivery reports logged.</p>
+        <div class="row"><svg width="20" height="20" aria-hidden="true"><use href="#i-msg"/></svg></div>
+        <h3 style="margin-top:12px">SMS messages</h3>
+        <p>Receipts and payslips by text, reminders to customers who owe, and a morning text with yesterday's figures.</p>
       </div></article>
       <article class="card card--sm rv rv-d3"><div class="card__foot" style="padding:20px">
-        <svg width="20" height="20" aria-hidden="true" style="margin-bottom:12px"><use href="#i-chart"/></svg>
-        <h3>Business reports</h3>
-        <p>Sales and profit by day, product, category, cashier, branch or payment method. Aged debtors, stock value on any date, tax by month.</p>
+        <div class="row"><svg width="20" height="20" aria-hidden="true"><use href="#i-chart"/></svg></div>
+        <h3 style="margin-top:12px">Business reports</h3>
+        <p>Sales and profit by day, product, cashier and branch, who owes and who you owe by age, tax by month.</p>
       </div></article>
       <article class="card card--sm rv rv-d4"><div class="card__foot" style="padding:20px">
-        <svg width="20" height="20" aria-hidden="true" style="margin-bottom:12px"><use href="#i-payroll"/></svg>
-        <h3>Payroll</h3>
-        <p>PAYE bands and SSNIT as dated rules: 5.5% employee, 13% employer, Tier 1 and Tier 2. Draft, approved, paid, each remittance marked off.</p>
+        <div class="row"><svg width="20" height="20" aria-hidden="true"><use href="#i-pill"/></svg><span class="chip"><em>with Shop</em></span></div>
+        <h3 style="margin-top:12px">Batches and expiry</h3>
+        <p>Earliest expiry sells first and expired stock never sells. For pharmacies, chemists and food sellers.</p>
       </div></article>
       <article class="card card--sm rv rv-d5"><div class="card__foot" style="padding:20px">
-        <svg width="20" height="20" aria-hidden="true" style="margin-bottom:12px"><use href="#i-pill"/></svg>
-        <h3>Batches and expiry</h3>
-        <p>Pharmacies, chemical shops and food sellers. Earliest expiry sells first, expired stock never sells, expiry report at 30 to 180 days.</p>
+        <div class="row"><svg width="20" height="20" aria-hidden="true"><use href="#i-factory"/></svg><span class="chip"><em>with Shop</em></span></div>
+        <h3 style="margin-top:12px">Production</h3>
+        <p>Recipes with the real batch cost, planned runs and actual yield, for bakeries, water, soap and juice.</p>
       </div></article>
       <article class="card card--sm rv rv-d6"><div class="card__foot" style="padding:20px">
-        <svg width="20" height="20" aria-hidden="true" style="margin-bottom:12px"><use href="#i-factory"/></svg>
-        <h3>Production</h3>
-        <p>Bakeries, sachet water, soap, shea butter, juice, blocks. Recipes with the real batch cost including gas and labour, planned runs, actual yield.</p>
+        <div class="row"><svg width="20" height="20" aria-hidden="true"><use href="#i-fork"/></svg><span class="chip"><em>with Shop</em></span></div>
+        <h3 style="margin-top:12px">Restaurant and bar</h3>
+        <p>Tables, tabs, kitchen and bar tickets, bills split by item and a service charge.</p>
       </div></article>
-      <article class="card card--sm rv rv-d7"><div class="card__foot" style="padding:20px">
-        <svg width="20" height="20" aria-hidden="true" style="margin-bottom:12px"><use href="#i-fork"/></svg>
-        <h3>Restaurant and bar</h3>
-        <p>Tables by area, named tabs, kitchen and bar tickets, bills split by item, optional service charge, waiter and kitchen roles.</p>
-      </div></article>
+    </div>
+
+    <div class="always rv">
+      <h3>Every business gets</h3>
+      <ul class="checks">
+        <li><span class="ck"><svg width="11" height="11" aria-hidden="true"><use href="#i-check"/></svg></span><span><b>Its own address and its own database</b>, never shared with another business.</span></li>
+        <li><span class="ck"><svg width="11" height="11" aria-hidden="true"><use href="#i-check"/></svg></span><span><b>Logins and roles</b>: cashier, storekeeper, accountant, sales person and the roles you make yourself.</span></li>
+        <li><span class="ck"><svg width="11" height="11" aria-hidden="true"><use href="#i-check"/></svg></span><span><b>Staff messages and notices</b>, and an audit trail of who changed what.</span></li>
+        <li><span class="ck"><svg width="11" height="11" aria-hidden="true"><use href="#i-check"/></svg></span><span><b>The Android app</b>, with the same screens, a Bluetooth till printer and fingerprint sign-in.</span></li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<!-- ============ combinations ============ -->
+<section class="sec sec--alt" id="combinations">
+  <div class="wrap">
+    <div class="sec__head">
+      <h2 class="t-sec rv">How businesses put them together</h2>
+      <p class="t-lead rv rv-d1">A few ways to put them together. Start with one and add the rest when you are ready; nothing has to be moved.</p>
+    </div>
+    <div class="grid-4">
+      <article class="combo rv rv-d1">
+        <h3>A shop with two branches</h3>
+        <p>Sells over the counter, keeps stock in both places, pays a few staff.</p>
+        <div class="combo__parts"><span class="chip">Shop</span><span class="chip">Business reports</span><span class="chip">SMS</span></div>
+      </article>
+      <article class="combo rv rv-d2">
+        <h3>An office</h3>
+        <p>No till. Twenty staff to keep records for and pay each month.</p>
+        <div class="combo__parts"><span class="chip">HRM</span><span class="chip">Payroll</span></div>
+      </article>
+      <article class="combo rv rv-d3">
+        <h3>A sales team</h3>
+        <p>Wins customers with calls and visits, then bills them.</p>
+        <div class="combo__parts"><span class="chip">CRM</span><span class="chip">Quotes and invoices</span><span class="chip">SMS</span></div>
+      </article>
+      <article class="combo rv rv-d4">
+        <h3>A pharmacy</h3>
+        <p>Sells medicines that expire and must sell the oldest first.</p>
+        <div class="combo__parts"><span class="chip">Shop</span><span class="chip">Batches and expiry</span><span class="chip">Payroll</span></div>
+      </article>
     </div>
   </div>
 </section>
@@ -146,17 +228,16 @@
 <!-- ============ cta ============ -->
 <section class="sec sec--tight" id="talk" style="padding-top:0">
   <div class="wrap">
-    <div class="cta rv">
+    <div class="cta cta--dark rv">
       <div class="prism" aria-hidden="true"><i></i><i></i><i></i><i></i></div>
       <div class="cta__in">
-        <h2 class="t-sec">Set your shop up on a trial</h2>
+        <h2 class="t-sec">Try it on a 14-day trial</h2>
         <p class="t-lead">
-          Send your product list and we will put your business on a 14-day trial at its own
-          address, with your products, opening stock, customers and suppliers brought in from
-          Excel or CSV.
+          Tell us which packages you need and we will set your business up at its own address,
+          with your products, customers, suppliers or staff list brought in from Excel or CSV.
         </p>
         <div class="hero__cta">
-          <a class="btn btn--dark btn--lg" href="https://demo.buscarapp.net" target="_blank" rel="noopener">
+          <a class="btn btn--lime btn--lg" href="https://demo.buscarapp.net" target="_blank" rel="noopener">
             Open the demo <svg class="arw" width="15" height="15" aria-hidden="true"><use href="#i-arw"/></svg>
           </a>
           <!-- WhatsApp: put the business number in international form with no +, spaces or
@@ -187,7 +268,7 @@
           </svg>
           <span class="brand__name">Buscar ERP</span>
         </a>
-        <p>Business software for Ghanaian SMEs. One record for selling, stock, customers, accounts, payroll and reports.</p>
+        <p>Business software for Ghanaian SMEs. Selling, stock, staff, payroll, customers and accounts, bought one package at a time.</p>
       </div>
       <div>
         <h4>Product</h4>

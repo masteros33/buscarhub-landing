@@ -297,3 +297,36 @@ button{font:inherit}
   *,*::before,*::after{animation-duration:.001ms!important;animation-iteration-count:1!important;transition-duration:.001ms!important}
   .rv{opacity:1;transform:none}
 }
+
+/* ============ packages: families, add-ons, combinations ============
+   Each core package is a white panel with its icon on a soft green tile; one that is not
+   ready yet keeps a neutral tile. The closing band is dark with the light green button. */
+.t-sub{font-size:13px;font-weight:500;letter-spacing:.06em;text-transform:uppercase;color:var(--text-secondary);margin:0 0 16px}
+.t-sub:not(:first-child){margin-top:48px}
+.fams{margin-bottom:8px}
+.fam{display:flex;flex-direction:column;gap:10px;padding:24px 22px;background:var(--bg-primary);border:1px solid var(--border-default);border-radius:var(--radius-3xl);box-shadow:var(--shadow-xs)}
+.fam__top{display:flex;align-items:center;justify-content:space-between;gap:10px;margin-bottom:6px}
+.fam__ico{width:46px;height:46px;border-radius:var(--radius-xl);display:grid;place-items:center;background:var(--accent-50);color:var(--accent-900);border:1px solid var(--accent-200)}
+.fam--soon .fam__ico{background:var(--bg-secondary);color:var(--text-secondary);border-color:var(--border-default)}
+.fam h3{font-size:20px;font-weight:500;letter-spacing:-.02em}
+.fam__who{font-size:14px;line-height:20px;color:var(--text-secondary);min-height:40px}
+.fam .plan__list{margin-top:6px}
+.always{margin-top:48px;padding:24px;background:var(--bg-primary);border:1px solid var(--border-default);border-radius:var(--radius-3xl)}
+.always h3{font-size:16px;font-weight:500;margin-bottom:6px}
+.combo{display:flex;flex-direction:column;gap:8px;padding:22px 20px;background:var(--bg-primary);border:1px solid var(--border-default);border-radius:var(--radius-2xl)}
+.combo h3{font-size:16px;font-weight:500;letter-spacing:-.01em}
+.combo p{font-size:13px;line-height:18px;color:var(--text-secondary)}
+.combo__parts{display:flex;flex-wrap:wrap;gap:6px;margin-top:auto;padding-top:8px}
+.combo__parts .chip{height:26px;padding:0 10px;border:1px solid var(--accent-200);border-radius:var(--radius-full);background:var(--accent-50);color:var(--accent-900)}
+.btn--lime{background:var(--accent-200);color:var(--accent-950);border-color:var(--accent-200)}
+.btn--lime:hover{background:var(--accent-300);border-color:var(--accent-300)}
+.cta--dark{background:var(--neutral-950);border-color:var(--neutral-950)}
+.cta--dark .t-sec{color:var(--white)}
+.cta--dark .t-lead{color:var(--neutral-300)}
+.cta--dark .btn:not(.btn--lime){background:transparent;color:var(--white);border-color:var(--neutral-700)}
+.cta--dark .btn:not(.btn--lime):hover{background:var(--neutral-800)}
+@media (max-width:900px){.fam__who{min-height:0}}
+.fam--link{text-decoration:none;color:inherit;transition:border-color .18s ease,box-shadow .18s ease}
+.fam--link:hover{border-color:var(--border-hover);box-shadow:var(--shadow-md)}
+.fam--link .go{color:var(--text-tertiary);transition:transform .18s ease}
+.fam--link:hover .go{transform:translate(2px,-2px);color:var(--text-primary)}
