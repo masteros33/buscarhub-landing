@@ -1,5 +1,5 @@
 /* Buscar ERP — built on the BoardUI token set (see tokens.css).
-   Flat white, hairline borders, Plus Jakarta Sans at weight 500, 10px controls,
+   Flat white, hairline borders, Geist at weight 500, 10px controls,
    14–24px cards, near-invisible shadows. */
 
 *,*::before,*::after{box-sizing:border-box}
@@ -63,7 +63,7 @@ button{font:inherit}
 .btn{
   display:inline-flex;align-items:center;justify-content:center;gap:6px;
   height:var(--control-h);padding:0 13px;
-  border:1px solid var(--border-default);border-radius:var(--radius-2lg);
+  border:1px solid var(--border-default);border-radius:var(--radius-full);
   background:var(--bg-primary);color:var(--text-primary);
   font-size:14px;font-weight:500;letter-spacing:-.005em;white-space:nowrap;cursor:pointer;
   box-shadow:var(--shadow-xs);

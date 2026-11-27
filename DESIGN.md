@@ -66,7 +66,7 @@ Build components against these, not the ramps:
 
 ## 2. Type
 
-**Plus Jakarta Sans** for everything, **JetBrains Mono** for code, IDs, amounts and version tags.
+**Geist** for everything, **Geist Mono** for code, IDs and version tags; amounts use Geist with tabular figures.
 
 The thing that makes this look like a product and not a template: **headings are
 weight 500, not bold**, with tight negative tracking.
@@ -84,7 +84,7 @@ weight 500, not bold**, with tight negative tracking.
 Body copy is `--text-secondary`, not black. Only headings and emphasised values
 get `--text-primary`.
 
-Plus Jakarta Sans already keeps `l`, `I` and `1` apart (tailed l, flagged 1),
+Geist already keeps `l`, `I` and `1` apart (tailed l, flagged 1),
 so no font features are switched on.
 
 ---
